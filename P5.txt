@@ -1,0 +1,65 @@
+
+#importing Numpy for 2D array 
+
+from numpy import*
+#creation of 1D array 
+a=array([10,20,30,40,50,60],dtype=int)
+print("This is an integer array:", a)
+print()
+print(a,dtype)
+
+b=array(['Python','Java','R'])
+print("This is a char array:", b)
+
+c=array([10.5,25.6,30.8])
+print("This is a float array:",c)
+print("The length of 1D array a is:", len(a))
+
+#accessing an element
+print(a[0])
+print(a[1])
+
+#slicing an elements with range of indices
+print(a[0:3])
+print(a[:6])
+print(a[-3:-1])
+
+#printing elements with for loop without index
+print("Printing elements without index")
+for i in a:
+  print(i)
+#printing elements with for loop with index
+print("Printing elements with index")
+for i in range(len(a)):
+    print(a[i])
+# taking 1D as an input 
+n=int(input("Enter the no. of elements for an array"))
+d=zeros(n, dtype=int)
+for i in range(n):
+    x=int(input(" Enter the element"))
+    d[i]=x
+print("The array after user input is:", d)
+
+# creation of 2D array
+e=array([[11,22,33,44],[55,66,77,88]])
+print("The 2D array is:", e)
+print(e, dtype)
+print()
+print("The length of 2D array is:",len(e))
+
+# accessing an elements of 2D array
+print(e[0][0])
+print(e[1][2])
+print(e[0])
+print()
+
+#printing 2D elements with for loop
+row= len(e)
+for r in range (row):
+   for c in range (len(e[r])):
+     print(e[r][c])
+print()
+
+#taking 2D as an input
+f= zeros((2,2),dtype= int)
+print(f)
